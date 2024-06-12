@@ -7,6 +7,7 @@ import * as FileInput from '@/components/Form/FileInput';
 import { Select } from '@/components/Form/Select';
 import { SelectItem } from '@/components/Form/Select/SelectItem';
 import { Textarea } from '@/components/Form/Textarea';
+import { Button } from '@/components/Form/Button';
 
 export default function Home() {
   return (
@@ -24,19 +25,12 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              type="button"
-              className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm border border-zinc-300 text-zinc-700 hover:bg-zinc-50"
-            >
+            <Button type="button" variant="outline">
               Cancel
-            </button>
-            <button
-              type="submit"
-              form="settings"
-              className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700"
-            >
+            </Button>
+            <Button type="submit" form="settings" variant="primary">
               Save
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -153,39 +147,24 @@ export default function Home() {
                 </Select>
 
                 <div className="flex items-center gap-1">
-                  <button
-                    type="button"
-                    className="p-2 rounded-md hover:bg-zinc-50"
-                  >
+                  <Button type="button" variant="ghost">
                     <Bold className="w-4 h-4 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="p-2 rounded-md hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Italic className="w-4 h-4 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="p-2 rounded-md hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Link className="w-4 h-4 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="p-2 rounded-md hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <List className="w-4 h-4 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="p-2 rounded-md hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <ListOrdered
                       className="w-4 h-4 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
+                  </Button>
                 </div>
               </div>
 
@@ -211,18 +190,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-2 justify-end pt-5">
-            <button
-              type="button"
-              className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm border border-zinc-300 text-zinc-700 hover:bg-zinc-50"
-            >
+            <Button type="button" variant="outline">
               Cancel
-            </button>
-            <button
-              type="submit"
-              className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700"
-            >
+            </Button>
+            <Button type="submit" form="settings" variant="primary">
               Save
-            </button>
+            </Button>
           </div>
         </form>
       </div>
